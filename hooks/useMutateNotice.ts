@@ -60,5 +60,5 @@ export const useMutateNotice = () => {
     }
   )
 
-  return {}
+  return { createNoticeMutation, updateNoticeMutation, deleteNoticeMutation }
 }
