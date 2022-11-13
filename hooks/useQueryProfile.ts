@@ -12,7 +12,7 @@ export const useQueryProfile = () => {
   const { createProfileMutation } = useMutateProfile()
   const getProfile = async () => {
     const { data, error, status } = await supabase
-      .from('profile')
+      .from('profiles')
       .select('*')
       .eq('id', session?.user?.id)
       .single()
